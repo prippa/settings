@@ -87,5 +87,25 @@ else
   echo "zsh is already the default shell"
 fi
 
+# Append content of init.sh directly into .zshrc if not already included
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+INIT_FILE="$SCRIPT_DIR/init.sh"
+
+if [[ -f "$INIT_FILE" ]]; then
+  echo "Found init.sh in script directory"
+
+  # Check if its content is already in .zshrc
+  if ! grep -qF "$(head -n 1 "$INIT_FILE")" "$ZSHRC_FILE"; then
+    echo "Appending content of init.sh to .zshrc"
+    echo -e "\n# >>> Custom init.sh settings >>>" | sudo -u "$USER_NAME" tee -a "$ZSHRC_FILE" >/dev/null
+    sudo -u "$USER_NAME" cat "$INIT_FILE" >> "$ZSHRC_FILE"
+    echo -e "\n# <<< End of custom init.sh settings <<<" | sudo -u "$USER_NAME" tee -a "$ZSHRC_FILE" >/dev/null
+  else
+    echo "init.sh content already present in .zshrc"
+  fi
+else
+  echo "init.sh not found in script directory"
+fi
+
 # Done
 echo "Installation complete. Restart the terminal to apply changes."

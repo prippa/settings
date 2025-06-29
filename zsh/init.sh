@@ -1,0 +1,8 @@
+alias ds="cd ~/Desktop"
+alias fire="git add . && git commit -m 'update' && git push"
+alias up="source ~/.zshrc"
+alias ga="git add ."
+alias gc="git commit -m"
+alias gp="git push"
+alias gs="git status"
+alias ip="curl api.ipify.org && echo"
