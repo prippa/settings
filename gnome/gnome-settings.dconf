@@ -1,0 +1,403 @@
+[Logo-menu]
+hide-icon-shadow=false
+hide-softwarecentre=false
+menu-button-icon-image=14
+menu-button-icon-size=20
+menu-button-terminal='gnome-terminal'
+show-activities-button=true
+show-lockscreen=false
+show-power-options=true
+symbolic-icon=false
+use-custom-icon=false
+
+[aztaskbar]
+update-notifier-project-version=30
+
+[blur-my-shell]
+debug=false
+hacks-level=2
+pipelines={'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'color'>, 'id': <'effect_61847091144245'>, 'params': <@a{sv} {}>}>]>}}
+settings-version=2
+
+[blur-my-shell/appfolder]
+blur=true
+brightness=0.59999999999999998
+sigma=30
+
+[blur-my-shell/applications]
+blur=false
+sigma=53
+
+[blur-my-shell/coverflow-alt-tab]
+blur=false
+pipeline='pipeline_default'
+
+[blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.0
+override-background=true
+pipeline='pipeline_default'
+sigma=0
+static-blur=false
+style-dash-to-dock=2
+unblur-in-overview=false
+
+[blur-my-shell/dash-to-panel]
+blur-original-panel=true
+
+[blur-my-shell/hidetopbar]
+compatibility=false
+
+[blur-my-shell/lockscreen]
+blur=false
+pipeline='pipeline_default'
+
+[blur-my-shell/overview]
+blur=true
+pipeline='pipeline_default'
+style-components=0
+
+[blur-my-shell/panel]
+blur=true
+brightness=0.59999999999999998
+force-light-text=true
+override-background=true
+override-background-dynamically=false
+pipeline='pipeline_default'
+sigma=30
+static-blur=true
+style-panel=0
+unblur-in-overview=true
+
+[blur-my-shell/screenshot]
+blur=false
+pipeline='pipeline_default'
+
+[blur-my-shell/window-list]
+blur=false
+brightness=0.59999999999999998
+sigma=30
+
+[clipboard-indicator]
+cache-images=true
+cache-size=99
+clear-on-boot=false
+disable-down-arrow=false
+display-mode=0
+history-size=20
+keep-selected-on-clear=false
+move-item-first=false
+paste-button=true
+pinned-on-bottom=false
+strip-text=true
+topbar-preview-size=10
+
+[compact-top-bar]
+fade-text-on-fullscreen=true
+
+[dash-to-dock]
+always-center-icons=false
+animation-time=0.20000000000000001
+application-counter-overrides-notifications=true
+apply-custom-theme=false
+autohide=true
+autohide-in-fullscreen=false
+background-color='rgb(97,53,131)'
+background-opacity=0.34999999999999998
+custom-background-color=false
+custom-theme-shrink=true
+dance-urgent-applications=true
+dash-max-icon-size=38
+disable-overview-on-startup=false
+dock-fixed=false
+dock-position='BOTTOM'
+extend-height=false
+height-fraction=0.90000000000000002
+hide-delay=0.20000000000000001
+hide-tooltip=false
+hot-keys=false
+icon-size-fixed=false
+intellihide=true
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
+isolate-locations=true
+isolate-monitors=false
+isolate-workspaces=false
+max-alpha=0.80000000000000004
+middle-click-action='launch'
+multi-monitor=false
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+pressure-threshold=100.0
+preview-size-scale=0.0
+require-pressure-to-show=true
+running-indicator-style='DEFAULT'
+scroll-to-focused-application=true
+shift-click-action='minimize'
+shift-middle-click-action='launch'
+show-apps-always-in-the-edge=true
+show-apps-at-top=false
+show-delay=0.25
+show-dock-urgent-notify=true
+show-favorites=true
+show-icons-emblems=true
+show-icons-notifications-counter=true
+show-mounts=true
+show-mounts-network=false
+show-running=true
+show-show-apps-button=true
+show-trash=false
+show-windows-preview=true
+transparency-mode='FIXED'
+workspace-agnostic-urgent-windows=true
+
+[dash-to-panel]
+extension-version=68
+panel-anchors='{}'
+panel-element-positions='{}'
+panel-lengths='{}'
+panel-positions='{}'
+panel-sizes='{}'
+prefs-opened=false
+primary-monitor='ACI-A4LMTF114918'
+
+[ding]
+check-x11wayland=true
+icon-size='small'
+show-home=true
+show-network-volumes=false
+show-trash=true
+show-volumes=true
+start-corner='top-left'
+use-nemo=false
+
+[hidetopbar]
+enable-active-window=true
+enable-intellihide=true
+hot-corner=false
+keep-round-corners=false
+mouse-sensitive=true
+mouse-triggers-overview=false
+pressure-threshold=100
+shortcut-keybind=@as []
+shortcut-toggles=true
+
+[hotedge]
+fallback-in-use=false
+primary-monitor-only=false
+
+[just-perfection]
+accent-color-icon=false
+accessibility-menu=true
+activities-button=true
+animation=0
+background-menu=true
+clock-menu=true
+clock-menu-position=0
+clock-menu-position-offset=0
+controls-manager-spacing-size=0
+dash=true
+dash-app-running=true
+dash-icon-size=0
+dash-separator=true
+double-super-to-appgrid=true
+invert-calendar-column-items=false
+keyboard-layout=true
+looking-glass-height=0
+looking-glass-width=0
+max-displayed-search-results=0
+notification-banner-position=1
+osd=true
+osd-position=0
+panel=true
+panel-button-padding-size=0
+panel-icon-size=0
+panel-in-overview=true
+panel-indicator-padding-size=0
+panel-notification-icon=true
+panel-size=28
+power-icon=true
+quick-settings=true
+quick-settings-dark-mode=true
+ripple-box=true
+search=true
+show-apps-button=true
+startup-status=1
+support-notifier-showed-version=34
+support-notifier-type=0
+theme=false
+top-panel-position=0
+window-demands-attention-focus=false
+window-menu-take-screenshot-button=true
+window-picker-icon=true
+window-preview-caption=true
+window-preview-close-button=true
+workspace=true
+workspace-background-corner-size=0
+workspace-peek=true
+workspace-popup=true
+workspace-switcher-should-show=false
+workspace-switcher-size=0
+workspace-wrap-around=false
+workspaces-in-app-grid=true
+
+[nightthemeswitcher/commands]
+enabled=false
+sunrise=''
+
+[nightthemeswitcher/time]
+fullscreen-transition=true
+manual-schedule=true
+nightthemeswitcher-ondemand-keybinding=['<Shift><Super>t']
+sunrise=6.0
+sunset=20.0
+
+[openbar]
+apply-accent-shell=false
+apply-all-shell=false
+apply-menu-notif=false
+apply-menu-shell=false
+autofg-bar=true
+autohg-bar=false
+autotheme-refresh=false
+balpha=0.0
+bartype='Mainland'
+bg-change=true
+bgalpha=0.90000000000000002
+bgcolor=['0.710', '0.514', '0.353']
+bguri='file:///home/prippa/Downloads/6c9770ba3d6fbbd6fb31318d351b2eb3.jpg'
+bottom-margin=11.699999999999999
+boxalpha=0.0
+boxcolor=['0.596', '0.416', '0.267']
+bradius=0.0
+bwidth=0.0
+count1=1022890
+count10=137
+count11=5
+count12=3
+count2=618818
+count3=54423
+count4=43979
+count5=25309
+count6=13021
+count7=3233
+count8=948
+count9=229
+dark-bgcolor=['0.710', '0.514', '0.353']
+dark-bguri='file:///home/prippa/Downloads/45c916b671ec2e0f04939d50690fb6df%20(Edited).jpg'
+dark-boxcolor=['0.596', '0.416', '0.267']
+dark-iscolor=['0.388', '0.271', '0.173']
+dark-palette1=['8', '8', '8']
+dark-palette10=['132', '132', '132']
+dark-palette11=['140', '140', '140']
+dark-palette12=['148', '148', '148']
+dark-palette2=['93', '93', '93']
+dark-palette3=['28', '28', '28']
+dark-palette4=['47', '47', '47']
+dark-palette5=['36', '36', '36']
+dark-palette6=['194', '194', '194']
+dark-palette7=['60', '60', '60']
+dark-palette8=['68', '68', '68']
+dark-palette9=['124', '124', '124']
+default-font='Sans 12'
+disize=44.0
+fgalpha=1.0
+halpha=0.0
+height=35.0
+hpad=0.0
+import-export=false
+iscolor=['0.388', '0.271', '0.173']
+light-bguri='file:///home/prippa/Downloads/6c9770ba3d6fbbd6fb31318d351b2eb3.jpg'
+light-palette1=['41', '40', '39']
+light-palette10=['156', '140', '131']
+light-palette11=['156', '148', '124']
+light-palette12=['92', '84', '92']
+light-palette2=['233', '230', '220']
+light-palette3=['120', '114', '104']
+light-palette4=['82', '76', '69']
+light-palette5=['169', '162', '150']
+light-palette6=['67', '68', '60']
+light-palette7=['91', '92', '82']
+light-palette8=['147', '148', '135']
+light-palette9=['146', '140', '140']
+margin=0.0
+monitor-height=1080
+monitor-width=1920
+neon=true
+palette1=['41', '40', '39']
+palette10=['156', '140', '131']
+palette11=['156', '148', '124']
+palette12=['92', '84', '92']
+palette2=['233', '230', '220']
+palette3=['120', '114', '104']
+palette4=['82', '76', '69']
+palette5=['169', '162', '150']
+palette6=['67', '68', '60']
+palette7=['91', '92', '82']
+palette8=['147', '148', '135']
+palette9=['146', '140', '140']
+pause-reload=false
+position='Top'
+radius-bottomleft=false
+radius-topleft=true
+radius-topright=true
+reloadstyle=true
+set-bottom-margin=true
+set-fullscreen=false
+set-notif-position=false
+set-overview=false
+trigger-reload=false
+vpad=0.0
+width-bottom=false
+width-left=false
+width-right=false
+width-top=false
+
+[space-bar/appearance]
+application-styles='.space-bar {\n  -natural-hpadding: 12px;\n}\n\n.space-bar-workspace-label.active {\n  margin: 0 4px;\n  background-color: rgba(255,255,255,0.3);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive.empty {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,0.5);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}'
+
+[space-bar/behavior]
+always-show-numbers=false
+custom-label-named='{{name}}'
+custom-label-unnamed='{{number}} - {{total}}'
+enable-custom-label=true
+enable-custom-label-in-menu=false
+indicator-style='current-workspace'
+position='left'
+position-index=0
+smart-workspace-names=false
+system-workspace-indicator=false
+
+[space-bar/shortcuts]
+enable-move-to-workspace-shortcuts=true
+
+[space-bar/state]
+version=33
+
+[top-bar-organizer]
+left-box-order=['activities', 'apps-menu', 'places-menu', 'vitalsMenu', 'Space Bar']
+right-box-order=['[0x55d808674230 ShellTrayIcon]', '[0x55d80c3725e0 ShellTrayIcon]', '[0x55d809775150 ShellTrayIcon]', '[0x562ba8bfa360 ShellTrayIcon]', '[0x562ba8bf4f00 ShellTrayIcon]', '[0x562ba8bf02e0 ShellTrayIcon]', '[0x562ba754be30 ShellTrayIcon]', 'screenRecording', 'screenSharing', 'dwellClick', 'a11y', 'keyboard', 'dateMenu', 'quickSettings']
+
+[trayIconsReloaded]
+icon-brightness=0
+icon-contrast=0
+icon-margin-horizontal=0
+icon-margin-vertical=0
+icon-padding-horizontal=6
+icon-padding-vertical=0
+icon-saturation=40
+icon-size=16
+icons-limit=16
+invoke-to-workspace=true
+position-weight=0
+tray-margin-left=0
+tray-margin-right=0
+tray-position='right'
+wine-behavior=true
+
+[user-theme]
+name=''
+
+[vitals]
+hot-sensors=['_processor_usage_', '_temperature_nvme_composite_', '_memory_allocated_', '_memory_swap_used_', '_storage_free_']
+position-in-panel=0
+show-battery=false

@@ -13,10 +13,16 @@ fi
 
 EXTENSIONS=(
   "dash-to-dock@micxgx.gmail.com"
-  "nightthemeswitcher@romainvigier.fr"
   "Vitals@CoreCoding.com"
+  "nightthemeswitcher@romainvigier.fr"
+  "transparent-top-bar@ftpix.com"
   "just-perfection-desktop@just-perfection"
   "space-bar@luchrioh"
+  "logomenu@aryan_k"
+  "clipboard-indicator@tudmotu.com"
+  "ding@rastersoft.com"
+  "hidetopbar@mathieu.bidon.ca"
+  "trayIconsReloaded@selfmade.pl"
 )
 
 for ext in "${EXTENSIONS[@]}"; do

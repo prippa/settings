@@ -9,6 +9,7 @@ FLATPAKS=(
   "io.dbeaver.DBeaverCommunity"     # DBeaver
   "org.flameshot.Flameshot"         # Flameshot
   "com.mattermost.Desktop"          # Mattermost Desktop
+  "com.github.sdv43.whaler"         # Whaler (Docker GUI)
 )
 
 # Добавим Flathub, если ещё не добавлен
