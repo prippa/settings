@@ -118,7 +118,7 @@ hide-tooltip=false
 hot-keys=false
 icon-size-fixed=false
 intellihide=true
-intellihide-mode='MAXIMIZED_WINDOWS'
+intellihide-mode='FOCUS_APPLICATION_WINDOWS'
 isolate-locations=true
 isolate-monitors=false
 isolate-workspaces=false
@@ -126,7 +126,7 @@ max-alpha=0.80000000000000004
 middle-click-action='launch'
 multi-monitor=false
 preferred-monitor=-2
-preferred-monitor-by-connector='DisplayPort-0'
+preferred-monitor-by-connector='eDP'
 pressure-threshold=50.0
 preview-size-scale=0.0
 require-pressure-to-show=true
@@ -189,7 +189,7 @@ primary-monitor-only=false
 
 [just-perfection]
 accent-color-icon=false
-accessibility-menu=true
+accessibility-menu=false
 activities-button=true
 animation=0
 background-menu=true
@@ -353,6 +353,12 @@ width-bottom=false
 width-left=false
 width-right=false
 width-top=false
+
+[scale-by-display]
+default-dash-to-dock-icon-size=48
+default-scale-factor=1.06
+hide-a11y-icon=true
+integrate-dash-to-dock=false
 
 [space-bar/appearance]
 application-styles='.space-bar {\n  -natural-hpadding: 12px;\n}\n\n.space-bar-workspace-label.active {\n  margin: 0 4px;\n  background-color: rgba(255,255,255,0.3);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive.empty {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,0.5);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}'
