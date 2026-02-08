@@ -45,30 +45,31 @@ else
   echo "Starting full system setup..."
 fi
 
-# Update the system first
-echo "Updating system..."
+# Update official repo packages first (always works even if yay is broken)
+echo "Updating system packages..."
 sudo pacman -Syu --noconfirm
 
-# Install yay AUR helper if not present
-if ! command -v yay &> /dev/null; then
-  echo "Installing yay AUR helper..."
+# Install or rebuild yay AUR helper
+rebuild_yay() {
+  echo "Building yay from AUR..."
   sudo pacman -S --needed git base-devel --noconfirm
-  if [[ ! -d "yay" ]]; then
-    echo "Cloning yay repository..."
-  else
-    echo "yay directory already exists, removing it..."
-    rm -rf yay
-  fi
-
-  git clone https://aur.archlinux.org/yay.git
-
-  cd yay
-  echo "building yay.... yaaaaayyyyy"
+  rm -rf /tmp/yay-build
+  git clone https://aur.archlinux.org/yay.git /tmp/yay-build
+  cd /tmp/yay-build
   makepkg -si --noconfirm
-  cd ..
-  rm -rf yay
+  cd -
+  rm -rf /tmp/yay-build
+}
+
+if ! command -v yay &> /dev/null; then
+  echo "yay not found, installing..."
+  rebuild_yay
+elif ! yay --version &> /dev/null; then
+  echo "yay is broken (likely libalpm mismatch), rebuilding..."
+  rebuild_yay
 else
-  echo "yay is already installed"
+  echo "yay is working, updating AUR packages..."
+  yay -Sua --noconfirm
 fi
 
 # Install packages by category

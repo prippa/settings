@@ -10,19 +10,13 @@ is_group_installed() {
   pacman -Qg "$1" &> /dev/null
 }
 
-# Function to install packages if not already installed
+# Function to install or update packages
+# --needed skips packages already at latest version
+# Packages that are outdated will be upgraded, missing ones — installed
 install_packages() {
   local packages=("$@")
-  local to_install=()
-
-  for pkg in "${packages[@]}"; do
-    if ! is_installed "$pkg" && ! is_group_installed "$pkg"; then
-      to_install+=("$pkg")
-    fi
-  done
-
-  if [ ${#to_install[@]} -ne 0 ]; then
-    echo "Installing: ${to_install[*]}"
-    yay -S --noconfirm "${to_install[@]}"
+  if [ ${#packages[@]} -ne 0 ]; then
+    echo "Installing/updating: ${packages[*]}"
+    yay -S --needed --noconfirm "${packages[@]}"
   fi
-} 
+}

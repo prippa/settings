@@ -15,11 +15,12 @@ FLATPAKS=(
 # Добавим Flathub, если ещё не добавлен
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+# Update all installed flatpaks first
+echo "Updating all installed Flatpaks..."
+flatpak update -y
+
+# Install or update each flatpak (--or-update upgrades if already installed)
 for pak in "${FLATPAKS[@]}"; do
-  if ! flatpak list | grep -i "$pak" &> /dev/null; then
-    echo "Installing Flatpak: $pak"
-    flatpak install -y "$pak"
-  else
-    echo "Flatpak already installed: $pak"
-  fi
+  echo "Installing/updating Flatpak: $pak"
+  flatpak install --or-update -y flathub "$pak"
 done
