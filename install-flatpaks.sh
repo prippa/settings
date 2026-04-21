@@ -6,7 +6,8 @@ FLATPAKS=(
   "com.obsproject.Studio"           # OBS Studio
   "com.anydesk.Anydesk"             # AnyDesk
   "com.getpostman.Postman"          # Postman
-  "io.dbeaver.DBeaverCommunity"     # DBeaver
+  "io.dbeaver.DBeaverCommunity"     # DBeaver DB viewer #1
+  "com.mongodb.Compass"             # MongoDB Cmpass DB viewer #2
   "org.flameshot.Flameshot"         # Flameshot
   "com.mattermost.Desktop"          # Mattermost Desktop
   "com.github.sdv43.whaler"         # Whaler (Docker GUI)
